@@ -10,19 +10,14 @@
   --cream: #F8F6F0;
   --warm-white: #FFFFFF;
   --sand: #EAE5DC;
-  
-  /* BOLDER COLORS */
-  --terracotta: #D33F24; /* Punchy Rust Red */
+  --terracotta: #D33F24;
   --terracotta-light: #FCEBE8;
   --terracotta-dark: #A62D17;
-  
-  --sage: #16382C; /* Deep, Bold Forest Green */
+  --sage: #16382C;
   --sage-light: #E2EBE8;
-  
   --ink: #111111;
   --ink-mid: #333333;
   --ink-soft: #555555;
-  
   --border: rgba(22, 56, 44, 0.12);
   --shadow-sm: 0 4px 12px rgba(22, 56, 44, 0.05);
   --shadow-md: 0 8px 24px rgba(22, 56, 44, 0.08);
@@ -61,7 +56,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.1rem 2.5rem;displa
 .hero-photo{width:320px;height:390px;object-fit:cover;object-position:top center;border-radius:2rem 2rem 7rem 2rem;position:relative;z-index:1;border:3px solid white;box-shadow:var(--shadow-lg);}
 
 /* STATS STRIP */
-.stats-strip{background:var(--sage);border-radius:1.5rem;margin:0 2.5rem 4.5rem;padding:0;display:grid;grid-template-columns:repeat(4,1fr); box-shadow: var(--shadow-md);}
+.stats-strip{background:var(--sage);border-radius:1.5rem;margin:0 2.5rem 4.5rem;padding:0;display:grid;grid-template-columns:repeat(4,1fr);box-shadow:var(--shadow-md);}
 .stat{padding:2rem 1.5rem;text-align:center;border-right:1px solid rgba(255,255,255,0.1);}
 .stat:last-child{border-right:none;}
 .stat-num{font-family:'Lora',serif;font-size:2.1rem;color:var(--warm-white);letter-spacing:-0.04em;line-height:1;}
@@ -91,71 +86,72 @@ section{max-width:1100px;margin:0 auto;padding:4.5rem 2.5rem;}
 /* OUTCOMES */
 .outcomes-label{font-size:0.65rem;font-weight:700;letter-spacing:0.1em;color:var(--ink-soft);text-transform:uppercase;margin-bottom:0.6rem;margin-top:1.5rem;}
 .outcomes{display:flex;flex-wrap:wrap;gap:0.75rem;margin-top:0.25rem;}
-.outcome-chip{display:inline-flex;flex-direction:column;background:var(--warm-white);border:1px solid var(--border);border-radius:0.85rem;padding:0.7rem 1rem;min-width:140px; box-shadow: var(--shadow-sm);}
-.outcome-chip .oc-num{font-family:'Lora',serif;font-size:1.35rem;color:var(--terracotta);letter-spacing:-0.03em;line-height:1; font-weight: 600;}
+.outcome-chip{display:inline-flex;flex-direction:column;background:var(--warm-white);border:1px solid var(--border);border-radius:0.85rem;padding:0.7rem 1rem;min-width:140px;box-shadow:var(--shadow-sm);}
+.outcome-chip .oc-num{font-family:'Lora',serif;font-size:1.35rem;color:var(--terracotta);letter-spacing:-0.03em;line-height:1;font-weight:600;}
 .outcome-chip .oc-label{font-size:0.72rem;color:var(--ink-soft);margin-top:0.25rem;line-height:1.4;}
 
 /* ADDITIONAL EXP */
-.additional-exp{background:var(--warm-white);border-radius:1.25rem;padding:2rem 2.25rem;border:1px solid var(--border);margin-top:2rem; box-shadow: var(--shadow-sm);}
-.additional-exp h3{font-size:0.9rem;font-weight:600;color:var(--ink);margin-bottom:1.25rem;}
+.additional-exp{background:var(--warm-white);border-radius:1.25rem;padding:2rem 2.25rem;border:1px solid var(--border);margin-top:2rem;box-shadow:var(--shadow-sm);}
+.additional-exp h3{font-size:1.05rem;font-weight:700;color:var(--ink);margin-bottom:1.25rem;letter-spacing:-0.01em;}
 .compact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0.85rem;}
-.compact-item{font-size:0.82rem;color:var(--ink-soft);padding-left:0.9rem;border-left:2px solid var(--terracotta-light);line-height:1.5;}
-.compact-item strong{color:var(--ink);display:block;font-size:0.86rem;font-weight:600;}
+.compact-item{font-size:0.82rem;color:var(--ink-soft);padding-left:0.9rem;border-left:2px solid var(--terracotta-light);line-height:1.6;}
+.compact-item strong{color:var(--ink);display:block;font-size:0.86rem;font-weight:700;margin-bottom:0.1rem;}
 
 /* PROJECTS */
 .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;}
-.proj-card{background:var(--warm-white);border:1px solid var(--border);border-radius:1.25rem;padding:1.75rem;transition:all 0.25s;position:relative;overflow:hidden; box-shadow: var(--shadow-sm);}
+.proj-card{background:var(--warm-white);border:1px solid var(--border);border-radius:1.25rem;padding:1.75rem;transition:all 0.25s;position:relative;overflow:hidden;box-shadow:var(--shadow-sm);}
 .proj-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--terracotta);transform:scaleX(0);transform-origin:left;transition:transform 0.3s;}
 .proj-card:hover::after{transform:scaleX(1);}
-.proj-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px); border-color: var(--terracotta-light);}
+.proj-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);border-color:var(--terracotta-light);}
 .proj-tags{display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.85rem;}
 .ptag{font-size:0.62rem;font-weight:700;letter-spacing:0.05em;padding:0.2rem 0.6rem;border-radius:100px;background:var(--sand);color:var(--ink-soft);text-transform:uppercase;}
 .ptag.hot{background:var(--terracotta-light);color:var(--terracotta-dark);}
 .ptag.green{background:var(--sage-light);color:var(--sage);}
-.proj-title{font-family:'Lora',serif;font-size:1.1rem;color:var(--ink);margin-bottom:0.4rem;letter-spacing:-0.02em; font-weight: 600;}
+.proj-title{font-family:'Lora',serif;font-size:1.1rem;color:var(--ink);margin-bottom:0.4rem;letter-spacing:-0.02em;font-weight:600;}
+.proj-title a{color:inherit;text-decoration:none;border-bottom:1.5px solid var(--terracotta-light);transition:border-color 0.2s;}
+.proj-title a:hover{border-color:var(--terracotta);}
 .proj-org{font-size:0.72rem;color:var(--terracotta);font-weight:700;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:0.65rem;}
 .proj-desc{font-size:0.84rem;color:var(--ink-soft);line-height:1.7;}
 
 /* EDUCATION */
 .edu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;}
-.edu-card{background:var(--warm-white);border:1px solid var(--border);border-radius:1.25rem;padding:1.75rem;display:flex;gap:1.1rem;align-items:flex-start;transition:all 0.25s; box-shadow: var(--shadow-sm);}
-.edu-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px); border-color: var(--sage-light);}
+.edu-card{background:var(--warm-white);border:1px solid var(--border);border-radius:1.25rem;padding:1.75rem;display:flex;gap:1.1rem;align-items:flex-start;transition:all 0.25s;box-shadow:var(--shadow-sm);}
+.edu-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);border-color:var(--sage-light);}
 .edu-logo-box{width:56px;height:56px;flex-shrink:0;border-radius:12px;border:1px solid var(--border);background:white;display:flex;align-items:center;justify-content:center;overflow:hidden;}
 .edu-logo-box img{width:100%;height:100%;object-fit:contain;padding:6px;}
 .edu-degree{font-weight:600;font-size:0.92rem;color:var(--ink);margin-bottom:0.2rem;}
 .edu-school{font-size:0.82rem;color:var(--terracotta);font-weight:600;margin-bottom:0.2rem;}
 .edu-years{font-size:0.73rem;color:var(--ink-soft);}
 
-/* LEADERSHIP (Full Width Grid) */
-.leadership-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; }
-.leadership-item { background: var(--warm-white); border: 1px solid var(--border); border-radius: 1rem; padding: 1.5rem; display: flex; gap: 1rem; align-items: flex-start; box-shadow: var(--shadow-sm); transition: transform 0.2s, box-shadow 0.2s; }
-.leadership-item:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--terracotta-light); }
-.li-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--terracotta); flex-shrink: 0; margin-top: 0.35rem; }
-.li-title { font-size: 0.95rem; font-weight: 600; color: var(--ink); margin-bottom: 0.2rem; }
-.li-sub { font-size: 0.82rem; color: var(--ink-soft); line-height: 1.5; }
+/* LEADERSHIP */
+.leadership-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.25rem;}
+.leadership-item{background:var(--warm-white);border:1px solid var(--border);border-left:3px solid var(--terracotta-light);border-radius:1rem;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:0.3rem;box-shadow:var(--shadow-sm);transition:transform 0.2s,box-shadow 0.2s,border-left-color 0.2s;}
+.leadership-item:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-left-color:var(--terracotta);}
+.li-title{font-size:0.95rem;font-weight:600;color:var(--ink);}
+.li-sub{font-size:0.82rem;color:var(--ink-soft);line-height:1.5;}
 
-/* OFF DUTY (Distinct Block) */
-.off-duty-section { background: var(--sand); border-radius: 2rem; padding: 4.5rem 3rem; margin: 4rem auto; max-width: 1100px; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02); }
-.off-duty-section .section-heading { margin-bottom: 2rem; }
-.fun-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-.fun-card { background: var(--warm-white); border: none; border-radius: 1rem; padding: 1.75rem; display: flex; flex-direction: column; gap: 1rem; align-items: flex-start; box-shadow: var(--shadow-sm); transition: transform 0.2s;}
-.fun-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
-.fun-icon { font-size: 2rem; background: var(--sage-light); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 14px; color: var(--sage); }
-.fun-title { font-size: 1rem; font-weight: 600; color: var(--ink); margin-bottom: 0.2rem; }
-.fun-sub { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.5; }
+/* OFF DUTY */
+.off-duty-section{background:var(--sand);border-radius:2rem;padding:4.5rem 3rem;margin:4rem auto;max-width:1100px;box-shadow:inset 0 2px 10px rgba(0,0,0,0.02);}
+.off-duty-section .section-heading{margin-bottom:2rem;}
+.fun-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
+.fun-card{background:var(--warm-white);border:none;border-radius:1rem;padding:1.75rem;display:flex;flex-direction:column;gap:1rem;align-items:flex-start;box-shadow:var(--shadow-sm);transition:transform 0.2s;}
+.fun-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);}
+.fun-icon{font-size:2rem;background:var(--sage-light);width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:14px;color:var(--sage);}
+.fun-title{font-size:1rem;font-weight:600;color:var(--ink);margin-bottom:0.2rem;}
+.fun-sub{font-size:0.85rem;color:var(--ink-soft);line-height:1.5;}
 
 /* CONTACT */
-.contact-wrap{background:var(--sage); border-radius:2rem;padding:4.5rem;color:var(--cream);text-align:center; box-shadow: var(--shadow-lg);}
+.contact-wrap{background:var(--sage);border-radius:2rem;padding:4.5rem;color:var(--cream);text-align:center;box-shadow:var(--shadow-lg);}
 .contact-wrap .section-eyebrow{color:var(--terracotta-light);}
 .contact-wrap .section-heading{color:white;margin-bottom:0.85rem;}
 .contact-sub{color:rgba(255,255,255,0.7);margin-bottom:2.5rem;font-size:0.95rem;line-height:1.75;max-width:520px;margin-left:auto;margin-right:auto;}
 .contact-form{max-width:500px;margin:0 auto;display:flex;flex-direction:column;gap:1rem;}
 .contact-form input,.contact-form textarea{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:12px;padding:1rem 1.2rem;color:white;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;transition:border 0.2s;width:100%;}
 .contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,0.4);}
-.contact-form input:focus,.contact-form textarea:focus{border-color:var(--terracotta-light); background: rgba(255,255,255,0.08);}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--terracotta-light);background:rgba(255,255,255,0.08);}
 .contact-form textarea{height:130px;resize:none;}
-.contact-form button{background:var(--terracotta);color:white;border:none;border-radius:100px;padding:1rem 2.5rem;font-size:0.95rem;font-weight:600;cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif;align-self:center; margin-top: 0.5rem;}
-.contact-form button:hover{background:var(--terracotta-dark);transform:translateY(-2px); box-shadow: 0 4px 12px rgba(211, 63, 36, 0.3);}
+.contact-form button{background:var(--terracotta);color:white;border:none;border-radius:100px;padding:1rem 2.5rem;font-size:0.95rem;font-weight:600;cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif;align-self:center;margin-top:0.5rem;}
+.contact-form button:hover{background:var(--terracotta-dark);transform:translateY(-2px);box-shadow:0 4px 12px rgba(211,63,36,0.3);}
 
 /* HAMBURGER */
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
@@ -163,7 +159,7 @@ section{max-width:1100px;margin:0 auto;padding:4.5rem 2.5rem;}
 .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
 .hamburger.open span:nth-child(2){opacity:0;}
 .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(248,246,240,0.98);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);padding:1.5rem 2rem;flex-direction:column;gap:1rem;z-index:99; box-shadow: var(--shadow-md);}
+.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(248,246,240,0.98);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);padding:1.5rem 2rem;flex-direction:column;gap:1rem;z-index:99;box-shadow:var(--shadow-md);}
 .mobile-menu.open{display:flex;}
 .mobile-menu a{text-decoration:none;color:var(--ink-mid);font-size:1.05rem;font-weight:600;padding:0.75rem 0;border-bottom:1px solid var(--border);}
 .mobile-menu a:last-child{border-bottom:none;}
@@ -173,7 +169,7 @@ section{max-width:1100px;margin:0 auto;padding:4.5rem 2.5rem;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 
 footer{text-align:center;padding:2.5rem;font-size:0.85rem;color:var(--ink-soft);border-top:1px solid var(--border);max-width:1100px;margin:0 auto;}
-footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
+footer a{color:var(--terracotta);text-decoration:none;font-weight:600;}
 .divider{border:none;border-top:1px solid var(--border);margin:0 2.5rem;}
 
 @media(max-width:768px){
@@ -182,8 +178,8 @@ footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
   .hero-btns{justify-content:center;}
   .stats-strip{grid-template-columns:repeat(2,1fr);margin:0 1.25rem 3rem;}
   .exp-row{grid-template-columns:1fr;gap:0.75rem;padding:2rem 0;}
-  .proj-grid,.edu-grid {grid-template-columns:1fr;}
-  .off-duty-section { margin: 3rem 1.25rem; padding: 3rem 1.5rem; border-radius: 1.5rem; }
+  .proj-grid,.edu-grid{grid-template-columns:1fr;}
+  .off-duty-section{margin:3rem 1.25rem;padding:3rem 1.5rem;border-radius:1.5rem;}
   nav{padding:1.2rem 1.5rem;}
   .nav-links{display:none;}
   .nav-cta{display:none;}
@@ -209,6 +205,7 @@ footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
     <span></span><span></span><span></span>
   </button>
 </nav>
+
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#experience" onclick="closeMenu()">Experience</a>
@@ -218,6 +215,7 @@ footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
   <a href="mailto:arorachehak830@gmail.com" style="color:var(--terracotta);">Get in touch</a>
 </div>
 
+<!-- HERO -->
 <section class="hero" id="about">
   <div>
     <h1>Data Scientist with an <em>engineering mindset</em> and a bias for ownership.</h1>
@@ -237,6 +235,7 @@ footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
   </div>
 </section>
 
+<!-- STATS -->
 <div class="stats-strip reveal">
   <div class="stat"><div class="stat-num">500<span>K+</span></div><div class="stat-label">Users on production AI</div></div>
   <div class="stat"><div class="stat-num">100<span>M+</span></div><div class="stat-label">Records processed at PNC</div></div>
@@ -244,6 +243,7 @@ footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
   <div class="stat"><div class="stat-num">20<span>%</span></div><div class="stat-label">User engagement lift</div></div>
 </div>
 
+<!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-eyebrow">Where I've worked</div>
   <h2 class="section-heading">Experience</h2>
@@ -263,7 +263,8 @@ footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
           <li>Built A/B testing and causal inference frameworks that drove statistically validated product decisions and measurably improved user engagement.</li>
           <li>Owned end-to-end MLOps: MLflow tracking, LLM-as-a-judge evaluation, Spark pipelines, and reproducible CI/CD releases via GitHub Actions.</li>
         </ul>
-        <div class="outcomes-label">Impact</div><div class="outcomes">
+        <div class="outcomes-label">Impact</div>
+        <div class="outcomes">
           <div class="outcome-chip"><span class="oc-num">500K+</span><span class="oc-label">Users served globally</span></div>
           <div class="outcome-chip"><span class="oc-num">20%</span><span class="oc-label">User engagement lift</span></div>
         </div>
@@ -283,7 +284,8 @@ footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
           <li>Implemented <strong>HDBSCAN clustering</strong> for anomaly detection on live system metrics, surfacing risk signals that rule-based monitoring couldn't catch.</li>
           <li>Partnered with compliance teams to define AI safety thresholds and stress-test systems against adversarial edge cases before deployment.</li>
         </ul>
-        <div class="outcomes-label">Impact</div><div class="outcomes">
+        <div class="outcomes-label">Impact</div>
+        <div class="outcomes">
           <div class="outcome-chip"><span class="oc-num">100M+</span><span class="oc-label">Records processed</span></div>
           <div class="outcome-chip"><span class="oc-num">30%</span><span class="oc-label">Faster ETL runtime</span></div>
         </div>
@@ -302,7 +304,8 @@ footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
           <li>Identified a gap in vendor evaluation and independently designed an end-to-end RFP documentation framework from scratch, standardizing how the team assessed 10+ enterprise vendors.</li>
           <li>Built financial models and dashboards to forecast Revenue Cycle Management performance, supporting risk assessment and strategic planning at scale.</li>
         </ul>
-        <div class="outcomes-label">Impact</div><div class="outcomes">
+        <div class="outcomes-label">Impact</div>
+        <div class="outcomes">
           <div class="outcome-chip"><span class="oc-num">10+</span><span class="oc-label">Vendors standardized</span></div>
         </div>
       </div>
@@ -311,59 +314,63 @@ footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
   </div>
 
   <div class="additional-exp reveal">
-    <h3>Additional Experience and Research</h3>
+    <h3>Additional Experience &amp; Research</h3>
     <div class="compact-grid">
-      <div class="compact-item"><strong>Undergrad Research Assistant</strong>IQ Health Science and Engineering, MSU</div>
-      <div class="compact-item"><strong>Undergrad Research Assistant</strong>University of Michigan, STEM Ed</div>
-      <div class="compact-item"><strong>Innovation Intern</strong>Greenvayu, UI/UX Research</div>
-      <div class="compact-item"><strong>Product Manager</strong>Startupparty</div>
-      <div class="compact-item"><strong>Graphic and Web Designer</strong>Leonard Gelfand Center, CMU</div>
-      <div class="compact-item"><strong>Graduate Teaching Assistant</strong>Calculus 2</div>
-      <div class="compact-item"><strong>Tutor</strong>PLUStutor</div>
-      <div class="compact-item"><strong>Extern</strong>AT&T</div>
-      <div class="compact-item"><strong>Junior Staffer</strong>MSUMUN</div>
+      <div class="compact-item"><strong>Undergrad Research Assistant</strong>IQ Health Science and Engineering, MSU · Supported data collection and analysis for biomedical engineering research</div>
+      <div class="compact-item"><strong>Undergrad Research Assistant</strong>University of Michigan, STEM Ed · Contributed to educational research studying outcomes in K–12 STEM programs</div>
+      <div class="compact-item"><strong>Innovation Intern</strong>Greenvayu · Conducted UI/UX research to improve clean-air product usability and user flow</div>
+      <div class="compact-item"><strong>Product Manager</strong>Startupparty · Defined roadmap and coordinated cross-functional teams for early-stage product launches</div>
+      <div class="compact-item"><strong>Graphic and Web Designer</strong>Leonard Gelfand Center, CMU · Designed visual assets and maintained web presence for STEM outreach programs</div>
+      <div class="compact-item"><strong>Graduate Teaching Assistant</strong>Calculus 2 · Led recitations and held office hours to support undergraduate students</div>
+      <div class="compact-item"><strong>Tutor</strong>PLUStutor · Provided one-on-one academic support in STEM subjects across skill levels</div>
+      <div class="compact-item"><strong>Extern</strong>AT&amp;T · Shadowed industry professionals and explored operations in a telecom enterprise setting</div>
+      <div class="compact-item"><strong>Junior Staffer</strong>MSUMUN · Supported committee operations and delegate logistics at a large Model UN conference</div>
     </div>
   </div>
 </section>
 
 <hr class="divider">
 
+<!-- PROJECTS -->
 <section id="projects">
   <div class="section-eyebrow">What I've built</div>
   <h2 class="section-heading">Projects</h2>
   <div class="proj-grid">
+
     <div class="proj-card reveal">
       <div class="proj-tags"><span class="ptag hot">LLM</span><span class="ptag green">NLP</span><span class="ptag">Sentiment</span></div>
       <div class="proj-org">NVIDIA · Jan – May 2025</div>
       <div class="proj-title">Social Listening for Physical AI</div>
       <p class="proj-desc">Built an end-to-end NLP pipeline tracking social media sentiment and industry trends across generative, physical, and industrial AI for Nvidia's automotive and robotics verticals. Applied transformer-based sentiment analysis and BERTopic topic modeling, with insights delivered via Streamlit dashboards.</p>
     </div>
+
     <div class="proj-card reveal">
       <div class="proj-tags"><span class="ptag hot">GenAI</span><span class="ptag">Streamlit</span><span class="ptag">Recommender</span></div>
-      <div class="proj-org">TartanHacks · 2025</div>
+      <div class="proj-org">TartanHacks · Carnegie Mellon University · 2025</div>
       <div class="proj-title">Closet Coordinator</div>
       <p class="proj-desc">Built an attribute-based fashion recommendation app using Streamlit with a digital wardrobe browser and AI-powered outfit recommender that suggests matching items based on color theory and style attributes.</p>
     </div>
+
     <div class="proj-card reveal">
       <div class="proj-tags"><span class="ptag hot">BERT</span><span class="ptag green">Vector Search</span><span class="ptag">FAISS</span></div>
-      <div class="proj-org">CMU · Dec 2024 – Jan 2025</div>
-      <div class="proj-title">Thesis Mapper: Semantic Discovery</div>
+      <div class="proj-org">Carnegie Mellon University Libraries · Dec 2024 – Jan 2025</div>
+      <div class="proj-title"><a href="https://cmu-lib.github.io/lovedata2025-theses-map/" target="_blank">Thesis Mapper: Semantic Discovery ↗</a></div>
       <p class="proj-desc">Designed and deployed a semantic search and clustering system using BERT Sentence Transformers and FAISS to map relationships across hundreds of academic theses. Showcased at CMU's Love Data Week.</p>
     </div>
+
     <div class="proj-card reveal">
-      <div class="proj-tags"><span class="ptag hot">BERT</span><span class="ptag green">Vector Search</span><span class="ptag">FAISS</span></div>
-      <div class="proj-org">CMU · Dec 2024 – Jan 2025</div>
-      <div class="proj-title">Thesis Mapper: Semantic Discovery</div>
-      <p class="proj-desc">
-        Designed and deployed a semantic search and clustering system using BERT Sentence Transformers and FAISS to map relationships across hundreds of academic theses. Showcased at CMU's Love Data Week.
-        <br><br>
-        <a href="https://cmu-lib.github.io/lovedata2025-theses-map/" target="_blank" style="color: var(--terracotta); text-decoration: none; font-weight: 600;">View Live Map ↗</a>
-      </p>
-    </div>
+      <div class="proj-tags"><span class="ptag">Data Modeling</span><span class="ptag">Process Optimization</span></div>
+      <div class="proj-org">Perrigo Pharmaceuticals</div>
+      <div class="proj-title">Line Speed Optimization</div>
+      <p class="proj-desc">Analyzed manufacturing telemetry to identify production bottlenecks and built data models simulating process adjustments, delivering recommendations that increased throughput without compromising quality.</p>
+    </div>
+
+  </div>
 </section>
 
 <hr class="divider">
 
+<!-- EDUCATION -->
 <section id="education">
   <div class="section-eyebrow">Academic background</div>
   <h2 class="section-heading">Education</h2>
@@ -387,20 +394,43 @@ footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
   </div>
 </section>
 
+<!-- LEADERSHIP -->
 <section id="leadership">
   <div class="section-eyebrow">Community and Impact</div>
   <h2 class="section-heading">Leadership</h2>
   <div class="leadership-grid">
-    <div class="leadership-item reveal"><div class="li-dot"></div><div><div class="li-title">Graduation Speaker</div><div class="li-sub">Selected to represent the student body at graduation ceremonies</div></div></div>
-    <div class="leadership-item reveal"><div class="li-dot"></div><div><div class="li-title">Vice President</div><div class="li-sub">Indian Grad Student Association, CMU</div></div></div>
-    <div class="leadership-item reveal"><div class="li-dot"></div><div><div class="li-title">Graduate Student Representative</div><div class="li-sub">MS in Data Analytics for Science, CMU</div></div></div>
-    <div class="leadership-item reveal"><div class="li-dot"></div><div><div class="li-title">Director of PR and Events</div><div class="li-sub">International Students Association, MSU</div></div></div>
-    <div class="leadership-item reveal"><div class="li-dot"></div><div><div class="li-title">Global Ambassador</div><div class="li-sub">Bridged international students with campus resources at MSU</div></div></div>
-    <div class="leadership-item reveal"><div class="li-dot"></div><div><div class="li-title">Career Peer</div><div class="li-sub">College of Engineering, MSU — organized networking events and mentored students</div></div></div>
-    <div class="leadership-item reveal"><div class="li-dot"></div><div><div class="li-title">Resident Assistant</div><div class="li-sub">Michigan State University</div></div></div>
+    <div class="leadership-item reveal">
+      <div class="li-title">Graduation Speaker</div>
+      <div class="li-sub">Selected to represent the student body at graduation ceremonies</div>
+    </div>
+    <div class="leadership-item reveal">
+      <div class="li-title">Vice President</div>
+      <div class="li-sub">Indian Grad Student Association, CMU</div>
+    </div>
+    <div class="leadership-item reveal">
+      <div class="li-title">Graduate Student Representative</div>
+      <div class="li-sub">MS in Data Analytics for Science, CMU</div>
+    </div>
+    <div class="leadership-item reveal">
+      <div class="li-title">Director of PR and Events</div>
+      <div class="li-sub">International Students Association, MSU</div>
+    </div>
+    <div class="leadership-item reveal">
+      <div class="li-title">Global Ambassador</div>
+      <div class="li-sub">Bridged international students with campus resources at MSU</div>
+    </div>
+    <div class="leadership-item reveal">
+      <div class="li-title">Career Peer</div>
+      <div class="li-sub">College of Engineering, MSU — organized networking events and mentored students</div>
+    </div>
+    <div class="leadership-item reveal">
+      <div class="li-title">Resident Assistant</div>
+      <div class="li-sub">Michigan State University</div>
+    </div>
   </div>
 </section>
 
+<!-- OFF DUTY -->
 <section class="off-duty-section">
   <div class="section-eyebrow">Beyond the screen</div>
   <h2 class="section-heading">Off-Duty</h2>
@@ -423,6 +453,7 @@ footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" style="padding-top:0;">
   <div class="contact-wrap">
     <div class="section-eyebrow">Get in touch</div>
@@ -442,7 +473,6 @@ footer a{color:var(--terracotta);text-decoration:none; font-weight: 600;}
 </footer>
 
 <script>
-// Hamburger menu
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 hamburger.addEventListener('click', () => {
@@ -454,21 +484,27 @@ function closeMenu() {
   mobileMenu.classList.remove('open');
 }
 
-// Scroll reveal
+// Reveal on scroll + on load
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
+  entries.forEach(entry => {
     if (entry.isIntersecting) {
-      setTimeout(() => {
-        entry.target.classList.add('visible');
-      }, 60);
+      setTimeout(() => entry.target.classList.add('visible'), 60);
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0, rootMargin: '0px 0px 0px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Stagger children inside sections
+window.addEventListener('load', () => {
+  document.querySelectorAll('.reveal').forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight) {
+      el.classList.add('visible');
+    }
+  });
+});
+
+// Stagger grid children
 document.querySelectorAll('.proj-grid, .edu-grid, .leadership-grid, .fun-grid').forEach(grid => {
   grid.querySelectorAll('.reveal').forEach((el, i) => {
     el.style.transitionDelay = (i * 0.08) + 's';
@@ -482,10 +518,15 @@ function handleSubmit(e) {
   btn.textContent = 'Sent ✓';
   btn.style.background = '#4ADE80';
   btn.style.color = '#111';
-  setTimeout(() => { btn.textContent = 'Send message →'; btn.style.background = ''; btn.style.color = ''; e.target.reset(); }, 3000);
+  setTimeout(() => {
+    btn.textContent = 'Send message →';
+    btn.style.background = '';
+    btn.style.color = '';
+    e.target.reset();
+  }, 3000);
 }
 
-// Nav active state on scroll
+// Nav active state
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll', () => {
